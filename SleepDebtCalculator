@@ -20,7 +20,8 @@ function getActualSleepHours() {
   return getSleepHours('monday') + getSleepHours('tuesday') + getSleepHours('wednesday') + getSleepHours('thursday') + getSleepHours('friday') + getSleepHours('saturday') + getSleepHours('sunday');
 };
 
-function getIdealSleepHours(idealHours) {
+function getIdealSleepHours() {
+  const idealHours = 8;
   return idealHours * 7;
 };
 
