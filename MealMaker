@@ -20,7 +20,9 @@ const menu = {
   }
 };
 
-menu._meal = 'fettucine alfredo';
+specialMeals = ['fettucine alfredo', 'lasagne', 'steak frites']
+
+menu._meal = specialMeals[Math.floor(Math.random() * 2)];
 menu._price = 6.99;
 console.log(menu.todaysSpecial);
 
